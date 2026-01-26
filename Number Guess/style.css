@@ -1,0 +1,44 @@
+#heading{
+    text-align: center;
+    font-size: 3em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular';
+    text-shadow: 3px 3px 4px;
+}
+#num{
+    width: 60%;
+    border-color:blueviolet;
+    border-radius: 5px;
+    border-style:dashed;
+    transition: 0.25s;
+}
+#inp{
+    text-align: center;
+    padding: 100px;
+}
+#sub{
+    margin-top: 50px;
+}
+.btn{
+    padding: 10px;
+    margin: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2em;
+    font-weight: bold;
+    background-color:cadetblue;
+    color:indigo;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px;
+    transition: 0.25s;
+}
+.btn:hover{
+    background-color: darkslategrey;
+    font-size: 1.3em;
+}
+#num:hover{
+    border-style: dotted;
+}
+#num:focus{
+    border: 5px solid #4FCDFA;
+    border-radius: 10px;
+    width: 70%;
+}

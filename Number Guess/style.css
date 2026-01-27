@@ -1,44 +1,159 @@
-#heading{
-    text-align: center;
-    font-size: 3em;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular';
-    text-shadow: 3px 3px 4px;
+#heading {
+  text-align: center;
+  font-size: 3em;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular';
+  text-shadow: 3px 5px 5px;
+  background-color: khaki;
 }
-#num{
-    width: 60%;
-    border-color:blueviolet;
-    border-radius: 5px;
-    border-style:dashed;
-    transition: 0.25s;
+#num {
+  width: 60%;
+  border-color: blueviolet;
+  border-radius: 5px;
+  border-style: dashed;
+  transition: 0.25s;
 }
-#inp{
-    text-align: center;
-    padding: 100px;
+#inp {
+  text-align: center;
+  padding: 100px;
 }
-#sub{
-    margin-top: 50px;
+#sub {
+  margin-top: 50px;
 }
-.btn{
-    padding: 10px;
-    margin: 20px;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 1.2em;
-    font-weight: bold;
-    background-color:cadetblue;
-    color:indigo;
-    border-radius: 10px;
-    box-shadow: 5px 5px 20px;
-    transition: 0.25s;
+.btn {
+  padding: 10px;
+  margin: 20px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.2em;
+  font-weight: bold;
+  background-color: cadetblue;
+  color: indigo;
+  border-radius: 10px;
+  box-shadow: 5px 5px 20px;
+  transition: 0.25s;
 }
-.btn:hover{
-    background-color: darkslategrey;
-    font-size: 1.3em;
+.btn:hover {
+  background-color: darkslategrey;
+  font-size: 1.3em;
 }
-#num:hover{
-    border-style: dotted;
+#num:hover {
+  border-style: dotted;
 }
-#num:focus{
-    border: 5px solid #4FCDFA;
-    border-radius: 10px;
-    width: 70%;
+#num:focus {
+  border: 5px solid #4fcdfa;
+  border-radius: 10px;
+  width: 70%;
+}
+#ques {
+  text-align: center;
+  padding: 10px;
+  margin-top: 100px;
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 2.5em;
+  text-shadow: teal 5px 5px 10px;
+}
+
+@property --a {
+  syntax: '<angle>';
+  inherits: true;
+  initial-value: 0deg;
+}
+@property --p {
+  syntax: '<percentage>';
+  inherits: true;
+  initial-value: 0%;
+}
+@property --c1 {
+  syntax: '<color>';
+  inherits: true;
+  initial-value: #000;
+}
+@property --c2 {
+  syntax: '<color>';
+  inherits: true;
+  initial-value: #000;
+}
+
+html {
+  --s: 80px;
+  --_g: #0000, var(--c1) 2deg calc(var(--a) - 2deg), #0000 var(--a);
+  background:
+    conic-gradient(
+      from calc(-45deg - var(--a) / 2) at top var(--p) left var(--p),
+      var(--_g)
+    ),
+    conic-gradient(
+      from calc(-45deg - var(--a) / 2) at top var(--p) left var(--p),
+      var(--_g)
+    ),
+    conic-gradient(
+      from calc(45deg - var(--a) / 2) at top var(--p) right var(--p),
+      var(--_g)
+    ),
+    conic-gradient(
+      from calc(45deg - var(--a) / 2) at top var(--p) right var(--p),
+      var(--_g)
+    ),
+    conic-gradient(
+      from calc(-135deg - var(--a) / 2) at bottom var(--p) left var(--p),
+      var(--_g)
+    ),
+    conic-gradient(
+      from calc(-135deg - var(--a) / 2) at bottom var(--p) left var(--p),
+      var(--_g)
+    ),
+    conic-gradient(
+      from calc(135deg - var(--a) / 2) at bottom var(--p) right var(--p),
+      var(--_g)
+    ),
+    conic-gradient(
+        from calc(135deg - var(--a) / 2) at bottom var(--p) right var(--p),
+        var(--_g)
+      )
+      var(--c2);
+  background-size: calc(2 * var(--s)) calc(2 * var(--s));
+  animation: m 2s infinite alternate linear;
+}
+
+@keyframes m {
+  0%,
+  15% {
+    --a: 135deg;
+    --p: 20%;
+    --c1: #3b8183;
+    --c2: #fad089;
+    background-position:
+      0 0,
+      var(--s) var(--s);
+  }
+  45%,
+  50% {
+    --a: 90deg;
+    --p: 25%;
+    --c1: #3b8183;
+    --c2: #fad089;
+    background-position:
+      0 0,
+      var(--s) var(--s);
+  }
+  50.01%,
+  55% {
+    --a: 90deg;
+    --p: 25%;
+    --c2: #3b8183;
+    --c1: #fad089;
+    background-position:
+      var(--s) 0,
+      0 var(--s);
+  }
+  85%,
+  100% {
+    --a: 135deg;
+    --p: 20%;
+    --c2: #3b8183;
+    --c1: #fad089;
+    background-position:
+      var(--s) 0,
+      0 var(--s);
+  }
 }

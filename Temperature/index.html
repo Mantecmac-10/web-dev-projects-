@@ -7,6 +7,23 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <h1>Temperature Conversion</h1>
+    <form>
+      <input
+        type="number"
+        id="temp"
+        placeholder="Write your Temperature"
+        value="0"
+      /><br />
+      <div class="temp-field">
+        <label for="temp-type">Type</label>
+        <select name="opt" id="type" autocomplete="on">
+          <option id="celsius" value="celsius">Celsius</option>
+          <option id="fahrenheit" value="fahrenheit">Fahrenheit</option>
+          <option id="kelvin" value="kelvin">Kelvin</option>
+        </select>
+      </div>
+    </form>
     <script src="script.js"></script>
   </body>
 </html>

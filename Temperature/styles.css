@@ -1,0 +1,19 @@
+body {
+  background-color: azure;
+}
+#heading {
+  text-align: center;
+  color: cornflowerblue;
+  font-family: 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+  font-size: 2.5em;
+}
+
+#box {
+  text-align: center;
+  background-color: lightcyan;
+  max-width: 320px;
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: aqua 5px 5px 10px;
+  padding: 25px;
+}

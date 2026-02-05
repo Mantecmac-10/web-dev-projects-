@@ -44,4 +44,13 @@ body {
   padding: 10px;
   font-weight: bold;
   border-radius: 10px;
+  transition: 0.25s;
+}
+
+#btn:hover{
+  background-color: chocolate;
+}
+
+#type:focus{
+  background-color:cadetblue;
 }

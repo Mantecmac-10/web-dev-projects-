@@ -9,14 +9,15 @@
   <body>
     <h1 id="heading">Temperature Conversion</h1>
     <form id="box">
-      <input
-        type="number"
-        id="temp"
-        placeholder="Write your Temperature"
-        value="0"
-      /><br />
+      <input type="number" id="temp" value="0" /><br />
       <div class="temp-field">
-        <label for="temp-type">Type</label>
+        <label for="unit">From</label>
+        <select name="opt" id="type" autocomplete="on">
+          <option id="celsius" value="celsius">Celsius</option>
+          <option id="fahrenheit" value="fahrenheit">Fahrenheit</option>
+          <option id="kelvin" value="kelvin">Kelvin</option>
+        </select>
+        <label for="unit">to</label>
         <select name="opt" id="type" autocomplete="on">
           <option id="celsius" value="celsius">Celsius</option>
           <option id="fahrenheit" value="fahrenheit">Fahrenheit</option>
@@ -24,6 +25,7 @@
         </select>
       </div>
       <button id="btn">Convert</button>
+      <h3 id="result"></h3>
     </form>
     <script src="script.js"></script>
   </body>

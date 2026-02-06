@@ -1,5 +1,5 @@
 body {
-  background-color: azure;
+  background-color:lavender;
 }
 #heading {
   text-align: center;
@@ -33,7 +33,7 @@ body {
   border-radius: 10px;
 }
 
-#type {
+.opt {
   text-align: center;
   font-weight: bold;
   border-radius: 8px;

@@ -1,5 +1,5 @@
 body {
-  background-color:lavender;
+  background-color: lavender;
 }
 #heading {
   text-align: center;
@@ -47,10 +47,10 @@ body {
   transition: 0.25s;
 }
 
-#btn:hover{
+#btn:hover {
   background-color: chocolate;
 }
 
-#type:focus{
-  background-color:cadetblue;
+.opt:focus {
+  background-color: cadetblue;
 }
